@@ -1,0 +1,5 @@
+@import url(./bootstrap/bootstrap.min.css);
+@import url(./config/config.css);
+@import url(./components/components.css);
+@import url(./pages/homepage.css);
+@import url(./responsive/responsive.css);

@@ -8,7 +8,7 @@
     <title>Burger Bistro</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,8 +19,47 @@
   </head>
   <body>
     <header>
-      Hello World
+
     </header>
+
+    <div class="container-fluid">
+      <div class="row min-vh-100 flex-column flex-md-row">
+        <aside class="col-12 col-md-3 col-xl-2 p-0 bg-dark flex-shrink-1">
+          <nav 
+            class="navbar navbar-expand-md navbar-dark bd-dark flex-md-column 
+            flex-row align-items-center py-2 text-center sticky-top" 
+            id="sidebar"
+          >
+            <div class="text-center p-3">
+              <img 
+                src="/images/logo-burger.svg" 
+                class="img-fluid my-4 p-1 d-none d-md-block shadow" 
+                alt="burger logo"
+              >
+              <a href="#" class="navbar-brand mx-0 front-weight-bold text-nowrap"></a>
+            </div>
+            <button 
+              type="button" 
+              class="navbar-toggler border-0 order-1" 
+              data-toggle="collapse" 
+              data-target="#nav" 
+              aria-controls="nav" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation"
+            ></button>
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+   <!--
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo-burger.svg" />
+    </a>
+   -->
+
+
     <main>
 
     </main>
