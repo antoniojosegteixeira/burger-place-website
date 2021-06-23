@@ -10,6 +10,9 @@
     <!-- Bootstrap -->
     <link href="css/main.css" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,51 +21,73 @@
     <![endif]-->
   </head>
   <body>
-    <header>
-
-    </header>
-
-    <div class="container-fluid">
-      <div class="row min-vh-100 flex-column flex-md-row">
-        <aside class="col-12 col-md-3 col-xl-2 p-0 bg-dark flex-shrink-1">
-          <nav 
-            class="navbar navbar-expand-md navbar-dark bd-dark flex-md-column 
-            flex-row align-items-center py-2 text-center sticky-top" 
-            id="sidebar"
-          >
-            <div class="text-center p-3">
-              <img 
-                src="/images/logo-burger.svg" 
-                class="img-fluid my-4 p-1 d-none d-md-block shadow" 
-                alt="burger logo"
-              >
-              <a href="#" class="navbar-brand mx-0 front-weight-bold text-nowrap"></a>
-            </div>
-            <button 
-              type="button" 
-              class="navbar-toggler border-0 order-1" 
-              data-toggle="collapse" 
-              data-target="#nav" 
-              aria-controls="nav" 
-              aria-expanded="false" 
-              aria-label="Toggle navigation"
-            ></button>
-
-          </nav>
-        </aside>
-      </div>
-    </div>
-    
-   <!--
-    <a class="navbar-brand" href="#">
-      <img src="/images/logo-burger.svg" />
-    </a>
-   -->
-
+  
 
     <main>
+      <div class="container-fluid">
+        <div class="row min-vh-100 flex-column flex-md-row">
+          <aside class="col-12 col-md-3 col-xl-2 p-0 bg-dark flex-md column flex-row align-items-center py-2 text-center sticky-top">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark flex-md-column flex-row align-items-center py-2 text-center sticky-top" id="sidebar">
+              <div class="text-center p-3">
+                <img src="/images/logo-burger.svg" alt="Burger logo" class="img-fluid mt-4 p-1 d-none d-md-block"/>
+              </div>
+              <button type="button" class="navbar-toggler border-0 order-1" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expands="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse order-last" id="nav">
+                <ul class="navbar-nav flex-column w-100 justify-content-center">
+                  <li class="nav-item">
+                    <a href="" class="nav-link active">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link active">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link active">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link active">Contato</a>
+                  </li>
+                </ul>                
+              </div>
+            </nav>
 
+            <!-- SOCIAL -->
+            <!--
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white">
+                  <i class="fab fa-twitter-square fa-lg"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white">
+                  <i class="fab fa-instagram-square fa-lg"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-white">
+                  <i class="fab fa-facebook-square fa-lg"></i>
+                </a>
+              </li>
+            </ul> -->
+          </aside>
+
+          <!-- POSTS -->
+          <main class="col px-0 flex-grow-1">
+            <article class="d-flex flex-column vh-100 text-white position-relative overflow-hidden cheaderimage1">
+              <div class="p-0 m-0 d-flex flex-column position-absolute blind text-center justify-content-center">
+                <h1 class="display-1">BEM VINDO</h1>
+              </div>
+            </article>
+          </main>
+
+          <!-- POSTS -->
+        </div>
+      </div>
     </main>
+
+
     <footer>
 
     </footer>

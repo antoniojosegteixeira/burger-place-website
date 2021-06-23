@@ -1,0 +1,13 @@
+
+
+.cheaderimage1 {
+  background-color: transparent;
+  background-image: url(/images/header-image1.jpg)!important;
+  background-size: cover;
+}
+
+.blind {
+  background-color:rgba(82, 82, 82, 0.541);
+  height: 100%;
+  width: 100%;
+}
