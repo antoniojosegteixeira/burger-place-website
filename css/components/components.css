@@ -5,6 +5,20 @@
   margin: 1em 0;
   height: 2px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.678);
+  background-color: rgba(197, 110, 10, 0.822);
   border-radius: 1em;
+}
+
+.blank-space {
+  position: relative;
+  height: 20px;
+  width: 100%;
+}
+
+.nav-link.hover-orange {
+  color:black;
+}
+
+.nav-link.hover-orange:focus, .nav-link.hover-orange:hover {
+  color:rgb(253, 135, 0);
 }
