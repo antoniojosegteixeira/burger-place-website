@@ -10,4 +10,11 @@
 
   const center = map.getCenter();
 
+  //Create custom Pushpin
+  const pin = new Microsoft.Maps.Pushpin(center, {
+      icon: "assets/map-pin-solid.png"
+  });
+
+  //Add the pushpin to the map
+  map.entities.push(pin);
 }
