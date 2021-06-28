@@ -2,4 +2,5 @@
 @import url(./config/config.css);
 @import url(./components/components.css);
 @import url(./pages/homepage.css);
+@import url(./animations/animations.css);
 @import url(./responsive/responsive.css);

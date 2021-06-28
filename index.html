@@ -21,8 +21,6 @@
     <![endif]-->
   </head>
   <body>
-  
-
     <main>
       <div class="container-fluid">
         <div class="row min-vh-100 flex-column flex-md-row">
@@ -56,16 +54,17 @@
           <!-- POSTS -->
           <main class="col px-0 flex-grow-1">
             <!-- HERO -->
-            <article class="row d-flex flex-column vh-100 mx-0 text-white position-relative overflow-hidden cheaderimage1">
+            <article class="row d-flex flex-column vh-100 mx-0 text-white position-relative overflow-hidden">
+              <div id="cheaderimage1"></div>
               <div class="p-0 m-0 d-flex flex-column position-absolute blind text-center justify-content-center">
-                <h1 class="display-1">BEM VINDO</h1>
+                <h1 class="display-1 up-fade slow" >BEM VINDO</h1>
               </div>
             </article>
             <!-- HERO -->
 
             <!-- MENU -->
             <article class="row d-flex d-md-flex-column position-relative mx-0" id="menu">
-              <div class="col-0 p-5">
+              <div class="col-0 p-5 opacity0" id="menu-content">
                 <h1>MENU</h1>
                 <div class="container-fluid px-1 px-md-2">
                   <h5 class="mt-4">BURGERS</h5>
@@ -273,13 +272,16 @@
 
     </footer>
 
-    <!-- JS File -->
-    <script type="text/javascript" src="js/js.js"></script>
+    
     <!-- Bing Maps -->
     <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap' async defer></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- JS File -->
+    <script type="text/javascript" src="js/js.js"></script>
+    
+
   </body>
 </html>

@@ -1,9 +1,11 @@
 
 
-.cheaderimage1 {
+#cheaderimage1 {
+  height: 100%;
   background-color: transparent;
   background-image: url("https://antoniojosegteixeira.github.io/burger-place-website/assets/header-image1.jpg")!important;
   background-size: cover;
+  animation: growAndShrink 6s ease-in-out infinite alternate;
 }
 
 .blind {
@@ -15,3 +17,6 @@
 .bg-light-gray{
   background-color:rgba(82, 82, 82, 0.445);
 }
+
+
+
