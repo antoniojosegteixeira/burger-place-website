@@ -2,16 +2,24 @@
 /* CLASSES */
 
 .up-fade {
-  animation: upFade 1.5s ease-in-out forwards;
+  animation: upFade .8s ease-in-out forwards;
 }
 
 .up-fade-reverse {
-  animation: upFadeReverse 1.5s ease-in-out forwards;
+  animation: upFadeReverse .8s ease-in-out forwards;
 }
 
 .up-fade.slow {
   animation-duration: 2s;
 }
+
+
+/* MENU ANIMATION */
+.menu-fade {
+  animation: upFade 0.5s ease-in-out forwards;
+}
+
+
 
 
 

@@ -9,10 +9,9 @@
   border-radius: 1em;
 }
 
-.blank-space {
-  position: relative;
-  height: 20px;
-  width: 100%;
+
+@media (max-width: 600px) {
+    
 }
 
 /* map */
