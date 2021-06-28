@@ -5,6 +5,10 @@
   animation: upFade 1.5s ease-in-out forwards;
 }
 
+.up-fade-reverse {
+  animation: upFadeReverse 1.5s ease-in-out forwards;
+}
+
 .up-fade.slow {
   animation-duration: 2s;
 }
@@ -30,5 +34,16 @@
   to {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+@keyframes upFadeReverse {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(+50px);
+    opacity: 0;
   }
 }

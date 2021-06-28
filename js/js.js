@@ -36,6 +36,14 @@ window.addEventListener('scroll', () => {
   
   if(scrollTop >= menuShowHeight) {
     console.log(menuShowHeight, scrollTop,'é maior')
+    menuContent.classList.remove('up-fade-reverse');
     menuContent.classList.add('up-fade');
+  }
+
+  if(scrollTop < menuShowHeight) {
+    console.log(menuShowHeight, scrollTop,'é menor')
+    menuContent.classList.remove('up-fade');
+    menuContent.classList.add('up-fade-reverse');
+
   }
 })
