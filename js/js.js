@@ -19,9 +19,20 @@ function GetMap() {
   map.entities.push(pin);
 }
 
-const menu = document.getElementsByName('menu-item');
+// SCROLL INFOS
 let scrollTop = document.documentElement.scrollTop;
 let screenHeight = screen.height;
+
+// MENU ITEM
+const menu = document.getElementsByName('menu-item');
+
+
+// BURGER ITEMS
+const b5 = document.getElementById("b5");
+const b4 = document.getElementById("b4");
+const b3 = document.getElementById("b3");
+const b2 = document.getElementById("b2");
+
 
 
 /// LISTENER FOR SCROLL
@@ -64,9 +75,7 @@ function fadeMenuItems() {
       menu[i].style.animationDelay = `${i * 200}ms`;
       menu[i].classList.add('menu-fade');
     }
-  }
-  
-  if(scrollTop <= breakpoint) {
+  } else {
     for(let i = 0; i < menu.length; i++) {
       menu[i].classList.remove('menu-fade');
     }
@@ -76,7 +85,30 @@ function fadeMenuItems() {
 
 // BURGER ANIMATION
 function animateBurger() {
-  const burgerContainer = document.getElementById("burger-container");
-  const divs = burgerContainer.querySelectorAll("div");
+
+
+  const rowHeight = document.getElementById("about").offsetTop;
+  const burgerBreakpoint = rowHeight - (screenHeight * 0.6);
+
+  console.log(scrollTop, burgerBreakpoint)
+
+  if(scrollTop >= burgerBreakpoint) {
+    console.log('PASSOU')
+    b5.classList.add('addUpRightIngredient');
+  
+    b4.classList.add('addUpLeftIngredient');
+  
+    b3.classList.add('addBottomRightIngredient');
+  
+    b2.classList.add('addBottomLeftIngredient');
+
+  } else {
+
+    b5.classList.remove('addUpRightIngredient');
+    b4.classList.remove('addUpLeftIngredient');
+    b3.classList.remove('addBottomRightIngredient');
+    b2.classList.remove('addBottomLeftIngredient');
+  }
+ 
 }
   

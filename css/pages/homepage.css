@@ -18,32 +18,10 @@
   background-color:rgba(82, 82, 82, 0.445);
 }
 
-
-.burger-container {
-  height: 30vh;
-}
-
-.burger {
-  position: relative;
-}
-
-#burger-container > div > img {
-  width: 100%;
-}
-
-
-
-
-#burger-container > div:nth-child(1) {
-  z-index: 15;
-}
-#burger-container > div:nth-child(2) {
-  z-index: 14;
-}
-#burger-container > div:nth-child(3) {
+#b2 {
   z-index: 13;
 }
-#burger-container > div:nth-child(4) {
+#b3 {
   z-index: 12;
 }
 #b4 {

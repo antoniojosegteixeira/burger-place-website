@@ -20,6 +20,24 @@
 }
 
 
+/* BURGER ANIMATION */
+.addUpRightIngredient {
+  animation: addUpRightIngredient 1.3s ease-in-out forwards;
+}
+
+.addUpLeftIngredient {
+  animation: addUpLeftIngredient 1.3s ease-in-out .5s forwards;
+}
+
+.addBottomRightIngredient {
+  animation: addBottomRightIngredient 1.3s ease-in-out 1s forwards;
+}
+
+.addBottomLeftIngredient {
+  animation: addBottomLeftIngredient 1.3s ease-in-out 1.5s forwards;
+}
+
+
 
 
 
@@ -68,5 +86,17 @@
 @keyframes addUpLeftIngredient {
   100% {
     transform: rotate(180deg) translate(-100%, -50%) rotate(-180deg);
+  }
+}
+
+@keyframes addBottomRightIngredient {
+  100% {
+    transform: rotate(-180deg) translate(100%, 100%) rotate(180deg);
+  }
+}
+
+@keyframes addBottomLeftIngredient {
+  100% {
+    transform: rotate(180deg) translate(-103%, 100%) rotate(-180deg);
   }
 }
