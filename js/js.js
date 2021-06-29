@@ -19,6 +19,7 @@ function GetMap() {
   map.entities.push(pin);
 }
 
+const menu = document.getElementsByName('menu-item');
 let scrollTop = document.documentElement.scrollTop;
 let screenHeight = screen.height;
 
@@ -29,6 +30,7 @@ window.addEventListener('scroll', () => {
   screenHeight = screen.height;
   fadeElements(["about", "gallery", "infos"]);
   fadeMenuItems();
+  animateBurger()
 });
 
 
@@ -54,7 +56,6 @@ function fadeElements(target) {
 
 
 /// MENU TABLE ANIMATION
-const menu = document.getElementsByName('menu-item');
 function fadeMenuItems() {
   const breakpoint = (document.getElementById('menu').offsetTop - (screenHeight * 0.6));
   
@@ -70,5 +71,12 @@ function fadeMenuItems() {
       menu[i].classList.remove('menu-fade');
     }
   }
+}
+
+
+// BURGER ANIMATION
+function animateBurger() {
+  const burgerContainer = document.getElementById("burger-container");
+  const divs = burgerContainer.querySelectorAll("div");
 }
   
