@@ -87,8 +87,8 @@ function fadeMenuItems() {
 function animateBurger() {
 
 
-  const rowHeight = document.getElementById("about").offsetTop;
-  const burgerBreakpoint = rowHeight - (screenHeight * 0.6);
+  const rowHeight = document.getElementById("gallery").offsetTop;
+  const burgerBreakpoint = rowHeight - screenHeight;
 
   console.log(scrollTop, burgerBreakpoint)
 
@@ -102,12 +102,13 @@ function animateBurger() {
   
     b2.classList.add('addBottomLeftIngredient');
 
-  } else {
-
-    b5.classList.remove('addUpRightIngredient');
+  }
+  
+  if(scrollTop <= burgerBreakpoint && b5.classList.contains('addUpRightIngredient')) {
+   /* b5.classList.remove('addUpRightIngredient');
     b4.classList.remove('addUpLeftIngredient');
     b3.classList.remove('addBottomRightIngredient');
-    b2.classList.remove('addBottomLeftIngredient');
+    b2.classList.remove('addBottomLeftIngredient');*/
   }
  
 }
