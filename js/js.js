@@ -27,13 +27,6 @@ let screenHeight = screen.height;
 const menu = document.getElementsByName('menu-item');
 
 
-// BURGER ITEMS
-const b5 = document.getElementById("b5");
-const b4 = document.getElementById("b4");
-const b3 = document.getElementById("b3");
-const b2 = document.getElementById("b2");
-
-
 
 /// LISTENER FOR SCROLL
 window.addEventListener('scroll', () => {
@@ -41,7 +34,6 @@ window.addEventListener('scroll', () => {
   screenHeight = screen.height;
   fadeElements(["about", "gallery", "infos"]);
   fadeMenuItems();
-  animateBurger()
 });
 
 
@@ -53,7 +45,6 @@ function fadeElements(target) {
     const targetElement = document.getElementById(e);
   
     if(scrollTop >= breakpoint) {
-      console.log('maior')
       targetElement.classList.remove('up-fade-reverse');
       targetElement.classList.add('up-fade');
     }
@@ -81,35 +72,3 @@ function fadeMenuItems() {
     }
   }
 }
-
-
-// BURGER ANIMATION
-function animateBurger() {
-
-
-  const rowHeight = document.getElementById("gallery").offsetTop;
-  const burgerBreakpoint = rowHeight - screenHeight;
-
-  console.log(scrollTop, burgerBreakpoint)
-
-  if(scrollTop >= burgerBreakpoint) {
-    console.log('PASSOU')
-    b5.classList.add('addUpRightIngredient');
-  
-    b4.classList.add('addUpLeftIngredient');
-  
-    b3.classList.add('addBottomRightIngredient');
-  
-    b2.classList.add('addBottomLeftIngredient');
-
-  }
-  
-  if(scrollTop <= burgerBreakpoint && b5.classList.contains('addUpRightIngredient')) {
-   /* b5.classList.remove('addUpRightIngredient');
-    b4.classList.remove('addUpLeftIngredient');
-    b3.classList.remove('addBottomRightIngredient');
-    b2.classList.remove('addBottomLeftIngredient');*/
-  }
- 
-}
-  
